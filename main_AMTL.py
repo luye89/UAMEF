@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from BalancedMSE import ASERLoss
 from arguments import args_parser
 from utils import is_ascending
-from model.model_831 import Enzyme
+from model.model_AMTL import Enzyme
 
 parser = args_parser()
 args = parser.parse_args()
