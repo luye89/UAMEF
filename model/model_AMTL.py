@@ -182,9 +182,7 @@ class Enzyme(nn.Module):
         # 最终归一化
         self.mm_layernorm = nn.LayerNorm(hidden_dim)
 
-        # =========================================================
-        # ★ 独立多任务预测头 (为适配你的 AMTL 多任务结构保留)
-        # =========================================================
+    
         self.head_kcat = nn.Linear(hidden_dim, 1)
         self.head_km = nn.Linear(hidden_dim, 1)
         self.head_ki = nn.Linear(hidden_dim, 1)
